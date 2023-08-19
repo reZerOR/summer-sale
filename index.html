@@ -10,6 +10,51 @@
       type="text/css"
     />
     <script src="https://cdn.tailwindcss.com"></script>
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              clifford: "#da373d",
+              "base-color": "#E527B2",
+            },
+          },
+        },
+      };
+    </script>
+    <style>
+      .work-sans {
+        font-family: "Work Sans", sans-serif;
+      }
+    </style>
   </head>
-  <body></body>
+  <body class="work-sans text-black">
+    <header class="bg-[#F9F6E2]">
+      <div class="container mx-auto flex justify-around items-center">
+        <div class="flex flex-col items-center">
+          <h3 class="text-3xl font-medium mb-11">---SALE FEVER---</h3>
+          <h2 class="text-6xl font-bold mb-20">
+            Purchase TK 200 or <br />
+            above & get <span class="text-base-color">20% off</span>
+          </h2>
+          <div class="flex text-2xl font-medium gap-4 items-center">
+            <p>Use Promo Code</p>
+            <button class="btn btn-secondary text-2xl text-white">
+              SELL200
+            </button>
+          </div>
+        </div>
+        <div class="my-20">
+          <img src="images/Summer 1.png" alt="" />
+        </div>
+      </div>
+    </header>
+  </body>
 </html>
