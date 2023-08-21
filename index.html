@@ -37,7 +37,7 @@
   </head>
   <body class="work-sans text-black bg-[#F8F8F8]">
     <!-- header section -->
-    <header class="bg-[#F9F6E2]">
+    <header class="bg-[#F9F6E2] lg:h-screen">
       <div
         class="container mx-auto flex flex-col lg:flex-row justify-around items-center"
       >
@@ -65,6 +65,7 @@
         Kitchenware
       </h3>
       <section class="flex flex-col lg:flex-row gap-6">
+        <!-- card section -->
         <section class="flex-1 text-center lg:text-left">
           <!-- card row 1 -->
           <div class="mb-14">
@@ -73,8 +74,8 @@
             >
               <!-- card 1 -->
               <div
-                class="card w-96 bg-base-100 shadow-xl p-5 cursor-pointer"
-                onclick="card1Click()"
+                class="card w-96 bg-base-100 shadow-xl p-5 cursor-pointer h-[350px]"
+                onclick="row1Card1('row1-card1', 'row1-card1-price')"
               >
                 <figure class="p-10 bg-slate-300 rounded-xl">
                   <img
@@ -119,7 +120,10 @@
                 </div>
               </div>
               <!-- card 2 -->
-              <div class="card w-96 bg-base-100 shadow-xl p-5 cursor-pointer">
+              <div
+                class="card w-96 bg-base-100 shadow-xl p-5 cursor-pointer h-[350px]"
+                onclick="row1Card1('row1-card2', 'row1-card2-price')"
+              >
                 <figure class="p-10 bg-slate-300 rounded-xl">
                   <img
                     src="/images/prod2.png"
@@ -156,12 +160,17 @@
                       class="mask mask-star bg-yellow-400"
                     />
                   </div>
-                  <h2 class="card-title">K. Accessories</h2>
-                  <p class="text-xl text-slate-400"><span>25.00</span> TK</p>
+                  <h2 class="card-title" id="row1-card2">K. Accessories</h2>
+                  <p class="text-xl text-slate-400">
+                    <span id="row1-card2-price">25.00</span> TK
+                  </p>
                 </div>
               </div>
               <!-- card 3 -->
-              <div class="card w-96 bg-base-100 shadow-xl p-5 cursor-pointer">
+              <div
+                class="card w-96 bg-base-100 shadow-xl p-5 cursor-pointer h-[350px]"
+                onclick="row1Card1('row1-card3', 'row1-card3-price')"
+              >
                 <figure class="p-10 bg-slate-300 rounded-xl">
                   <img
                     src="/images/prod3.png"
@@ -198,8 +207,10 @@
                       class="mask mask-star bg-yellow-400"
                     />
                   </div>
-                  <h2 class="card-title">Home Cooker</h2>
-                  <p class="text-xl text-slate-400"><span>49.00</span> TK</p>
+                  <h2 class="card-title" id="row1-card3">Home Cooker</h2>
+                  <p class="text-xl text-slate-400">
+                    <span id="row1-card3-price">49.00</span> TK
+                  </p>
                 </div>
               </div>
             </div>
@@ -211,7 +222,10 @@
               class="flex flex-col gap-6 lg:gap-0 lg:flex-row justify-between items-center"
             >
               <!-- card 1 -->
-              <div class="card w-96 bg-base-100 shadow-xl p-5 cursor-pointer">
+              <div
+                class="card w-96 bg-base-100 shadow-xl p-5 cursor-pointer h-[350px]"
+                onclick="row1Card1('row2-card1', 'row2-card1-price')"
+              >
                 <figure class="p-10 bg-slate-300 rounded-xl">
                   <img
                     src="/images/prod4.png"
@@ -248,12 +262,17 @@
                       class="mask mask-star bg-yellow-400"
                     />
                   </div>
-                  <h2 class="card-title">Sports Back Cap</h2>
-                  <p class="text-xl text-slate-400"><span>49.00</span> TK</p>
+                  <h2 class="card-title" id="row2-card1">Sports Back Cap</h2>
+                  <p class="text-xl text-slate-400">
+                    <span id="row2-card1-price">49.00</span> TK
+                  </p>
                 </div>
               </div>
               <!-- card 2 -->
-              <div class="card w-96 bg-base-100 shadow-xl p-5 cursor-pointer">
+              <div
+                class="card w-96 bg-base-100 shadow-xl p-5 cursor-pointer h-[350px]"
+                onclick="row1Card1('row2-card2', 'row2-card2-price')"
+              >
                 <figure class="p-10 bg-slate-300 rounded-xl">
                   <img
                     src="/images/prod5.png"
@@ -290,12 +309,17 @@
                       class="mask mask-star bg-yellow-400"
                     />
                   </div>
-                  <h2 class="card-title">Full Jersey Set</h2>
-                  <p class="text-xl text-slate-400"><span>69.00</span> TK</p>
+                  <h2 class="card-title" id="row2-card2">Full Jersey Set</h2>
+                  <p class="text-xl text-slate-400">
+                    <span id="row2-card2-price">69.00</span> TK
+                  </p>
                 </div>
               </div>
               <!-- card 3 -->
-              <div class="card w-96 bg-base-100 shadow-xl p-5 cursor-pointer">
+              <div
+                class="card w-96 bg-base-100 shadow-xl p-5 cursor-pointer h-[350px]"
+                onclick="row1Card1('row2-card3', 'row2-card3-price')"
+              >
                 <figure class="p-10 bg-slate-300 rounded-xl">
                   <img
                     src="/images/prod6.png"
@@ -332,8 +356,10 @@
                       class="mask mask-star bg-yellow-400"
                     />
                   </div>
-                  <h2 class="card-title">Sports cates</h2>
-                  <p class="text-xl text-slate-400"><span>159.00</span> TK</p>
+                  <h2 class="card-title" id="row2-card3">Sports cates</h2>
+                  <p class="text-xl text-slate-400">
+                    <span id="row2-card3-price">159.00</span> TK
+                  </p>
                 </div>
               </div>
             </div>
@@ -345,7 +371,10 @@
               class="flex flex-col gap-6 lg:gap-0 lg:flex-row justify-between items-center"
             >
               <!-- card 1 -->
-              <div class="card w-96 bg-base-100 shadow-xl p-5 cursor-pointer">
+              <div
+                class="card w-96 bg-base-100 shadow-xl p-5 cursor-pointer h-[350px]"
+                onclick="row1Card1('row3-card1', 'row3-card1-price')"
+              >
                 <figure class="p-10 bg-slate-300 rounded-xl">
                   <img
                     src="/images/prod7.png"
@@ -382,12 +411,17 @@
                       class="mask mask-star bg-yellow-400"
                     />
                   </div>
-                  <h2 class="card-title">Single Relax Chair</h2>
-                  <p class="text-xl text-slate-400"><span>185.00</span> TK</p>
+                  <h2 class="card-title" id="row3-card1">Single Relax Chair</h2>
+                  <p class="text-xl text-slate-400">
+                    <span id="row3-card1-price">185.00</span> TK
+                  </p>
                 </div>
               </div>
               <!-- card 2 -->
-              <div class="card w-96 bg-base-100 shadow-xl p-5 cursor-pointer">
+              <div
+                class="card w-96 bg-base-100 shadow-xl p-5 cursor-pointer h-[350px]"
+                onclick="row1Card1('row3-card2', 'row3-card2-price')"
+              >
                 <figure class="p-10 bg-slate-300 rounded-xl">
                   <img
                     src="/images/prod8.png"
@@ -424,12 +458,17 @@
                       class="mask mask-star bg-yellow-400"
                     />
                   </div>
-                  <h2 class="card-title">Children play</h2>
-                  <p class="text-xl text-slate-400"><span>299.00</span> TK</p>
+                  <h2 class="card-title" id="row3-card2">Children play</h2>
+                  <p class="text-xl text-slate-400">
+                    <span id="row3-card2-price">299.00</span> TK
+                  </p>
                 </div>
               </div>
               <!-- card 3 -->
-              <div class="card w-96 bg-base-100 shadow-xl p-5 cursor-pointer">
+              <div
+                class="card w-96 bg-base-100 shadow-xl p-5 cursor-pointer h-[350px]"
+                onclick="row1Card1('row3-card3', 'row3-card3-price')"
+              >
                 <figure class="p-10 bg-slate-300 rounded-xl">
                   <img
                     src="/images/prod9.png"
@@ -466,8 +505,10 @@
                       class="mask mask-star bg-yellow-400"
                     />
                   </div>
-                  <h2 class="card-title">Flexible Sofa</h2>
-                  <p class="text-xl text-slate-400"><span>339.00</span> TK</p>
+                  <h2 class="card-title" id="row3-card3">Flexible Sofa</h2>
+                  <p class="text-xl text-slate-400">
+                    <span id="row3-card3-price">339.00</span> TK
+                  </p>
                 </div>
               </div>
             </div>
@@ -483,10 +524,12 @@
                 name=""
                 placeholder="Coupon code"
                 class="p-4 rounded-l-lg border-y-2 border-l-2 border-slate-400 text-slate-400 text-xl"
-                id=""
+                id="coupon"
               />
               <button
-                class="text-xl py-4 px-6 btn-secondary rounded-r-lg"
+                class="text-xl text-white py-4 px-6 btn-secondary rounded-r-lg"
+                id="apply-button"
+                onclick="coupon()"
                 disabled
               >
                 Apply
@@ -498,7 +541,9 @@
             class="bg-white p-6 rounded-lg mt-6 text-2xl leading-10 font-medium"
           >
             <!-- order product -->
-            <div class="mb-3" id="product-text"></div>
+            <div class="mb-3">
+              <ul id="product-text"></ul>
+            </div>
             <!-- total price of product -->
             <div class="border-t-2 border-b-2 border-slate-400 mb-14">
               <h3 class="mt-6">
@@ -525,6 +570,7 @@
             <button
               class="text-xl text-white font-semibold py-4 px-[72px] btn-secondary rounded-lg -mt-6"
               onclick="my_modal_1.showModal()"
+              id="make-Purchase"
               disabled
             >
               Make Purchase
@@ -541,7 +587,10 @@
                 </p>
                 <div class="modal-action">
                   <!-- if there is a button in form, it will close the modal -->
-                  <button class="btn btn-secondary text-white mb-4">
+                  <button
+                    class="btn btn-secondary text-white mb-4"
+                    onclick="pageRelode()"
+                  >
                     Go Home
                   </button>
                 </div>
